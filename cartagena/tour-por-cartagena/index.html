@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tour por Cartagena de Indias · Experiencias Trvely</title>
+<meta name="description" content="Free tour por el centro histórico de Cartagena de Indias: muralla, Torre del Reloj, Catedral Santa Catalina y más. Trvely.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{--burg:#b41241;--burg2:#b01242;--coral:#ff2d55;--cream:#fffcf3;--cream2:#fffbf6;--beige:#f4e5d2;--ink:#2b2b2b;--gray:#777;--line:#e6ddce}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Montserrat',sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+  a{text-decoration:none;color:inherit}
+
+  nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .logo{height:32px}
+  .nav-links{display:flex;align-items:center;gap:28px;font-size:12px}
+  .nav-links a{color:#000}
+  .btn-pill{background:var(--burg2);color:#fff;font-weight:700;font-size:12px;padding:14px 26px;border-radius:100px}
+  .back{font-size:12px;color:var(--burg2);font-weight:700}
+
+  /* HERO */
+  .hero{position:relative;border-radius:56px;overflow:hidden;height:470px;margin-top:6px}
+  .hero img{width:100%;height:100%;object-fit:cover;object-position:center 55%}
+  .hero .tour{position:absolute;left:44px;top:34%;color:#fff;font-weight:500;font-size:24px;letter-spacing:10px}
+  .hero .wm{position:absolute;left:44px;top:42%;font-weight:800;font-size:82px;line-height:.83;color:rgba(255,255,255,.14);letter-spacing:-3px}
+
+  /* INFO BAR */
+  .infobar{background:var(--cream2);border-radius:44px;box-shadow:0 0 44px -17px rgba(0,0,0,.25);
+    display:flex;gap:60px;padding:34px 54px;margin:-70px 40px 0;position:relative;z-index:2}
+  .infobar .i .k{color:var(--burg);font-size:10px}
+  .infobar .i .v{font-weight:700;font-size:16px;margin-top:4px}
+
+  /* GALLERY */
+  .gallery{display:grid;grid-template-columns:1fr 1fr 220px;grid-template-rows:130px 130px;gap:18px;margin-top:40px}
+  .gallery img{width:100%;height:100%;object-fit:cover;border-radius:23px}
+  .gallery .g1{grid-row:1/3}.gallery .g2{grid-row:1/3}
+  .gallery .more{position:relative}
+  .gallery .more .ov{position:absolute;inset:0;background:rgba(176,18,66,.48);border-radius:23px;display:grid;place-items:center;color:#fff;font-weight:700;font-size:12px}
+
+  /* DESC */
+  .desc{text-align:center;font-size:22px;line-height:1.3;max-width:1075px;margin:48px auto 0}
+  .divider{height:2px;background:#e6e0d3;margin:56px 0 0}
+
+  /* ITINERARIO */
+  .itin-head{font-weight:800;font-size:64px;letter-spacing:-3px;color:var(--coral);margin:44px 0 8px}
+  .itin{display:grid;grid-template-columns:220px 1fr;gap:50px;margin-top:20px}
+  .detalles h4{color:var(--coral);font-size:16px;margin-bottom:18px;letter-spacing:-.5px}
+  .detalles .row{margin-bottom:16px}
+  .detalles .row .k{color:var(--burg);font-size:10px}
+  .detalles .row .v{font-weight:700;font-size:14px;margin-top:2px}
+  .itin-body p{font-size:18px;line-height:1.5;margin-bottom:16px}
+
+  /* CTA band */
+  .band{background:var(--burg2);margin:70px 0 0;padding:40px 0;text-align:center}
+  .band .q{color:#fff;font-weight:800;font-size:24px;margin-bottom:18px}
+  .band .cta{display:inline-block;border:1.5px solid #fff;color:#fff;font-weight:700;font-size:15px;padding:15px 60px;border-radius:66px}
+
+  /* REVIEWS */
+  .reviews{padding:56px 0}
+  .reviews h3{font-weight:800;font-size:32px;color:var(--burg);margin-bottom:26px;letter-spacing:-1px}
+  .rev{border-bottom:1px solid #e6ddce;padding:22px 4px}
+  .rev .top{display:flex;align-items:center;gap:10px}
+  .rev .name{font-size:20px;font-weight:600}
+  .rev .stars{color:var(--coral);font-size:15px;letter-spacing:2px}
+  .rev .meta{color:#666;font-size:13px;margin:6px 0 8px}
+  .rev .txt{font-size:14px;line-height:1.5;color:#333}
+  .more-op{display:block;width:420px;max-width:100%;margin:34px auto 0;text-align:center;background:var(--burg2);color:#fff;font-weight:700;font-size:15px;padding:16px;border-radius:100px}
+
+  footer{background:var(--burg);color:#fff;padding:40px 0;text-align:center}
+  footer .lema{font-weight:800;font-size:22px}
+  footer .legal{font-size:11px;opacity:.75;margin-top:10px}
+
+  @media(max-width:900px){
+    .hero{height:300px;border-radius:34px}.hero .wm{font-size:48px}
+    .infobar{flex-wrap:wrap;gap:24px;margin:-50px 12px 0;border-radius:28px;padding:24px}
+    .gallery{grid-template-columns:1fr 1fr;grid-template-rows:auto}.gallery .g1,.gallery .g2{grid-row:auto;height:160px}.gallery .more{height:120px}
+    .desc{font-size:17px}.itin-head{font-size:44px}.itin{grid-template-columns:1fr;gap:24px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <img class="logo" src="../../assets/logo-trvely.png" alt="Trvely">
+    <div class="nav-links">
+      <a class="back" href="../">← Experiencias</a>
+      <a href="#">Mis Favoritos</a>
+      <a href="#">Contacto</a>
+      <a class="btn-pill" href="#">Tus Planes</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <img src="../img/cartagena-catedral.png" alt="Tour por Cartagena de Indias">
+    <div class="tour">TOUR</div>
+    <div class="wm">CARTAGENA<br>DE INDIAS</div>
+  </section>
+
+  <div class="infobar">
+    <div class="i"><div class="k">Duración</div><div class="v">2h 30m</div></div>
+    <div class="i"><div class="k">Idioma</div><div class="v">Español</div></div>
+    <div class="i"><div class="k">Incluye</div><div class="v">Guía Turístico</div></div>
+  </div>
+
+  <div class="gallery">
+    <img class="g1" src="../img/cartagena-catedral.png" alt="">
+    <img class="g2" src="../img/islas-rosario.png" alt="">
+    <img src="../img/cartagena-catedral.png" alt="">
+    <div class="more"><img src="../img/islas-rosario.png" alt=""><div class="ov">Ver más Fotos</div></div>
+  </div>
+
+  <p class="desc">Recorre sus calles llenas de historia, balcones floridos, plazas llenas de vida y rincones donde cada piedra guarda una historia. Déjate envolver por el encanto de la ciudad amurallada, disfruta de su arquitectura colonial, su cultura vibrante y la calidez de su gente en un recorrido que despertará todos tus sentidos.</p>
+
+  <div class="divider"></div>
+
+  <h2 class="itin-head">Itinerario</h2>
+  <div class="itin">
+    <aside class="detalles">
+      <h4>Detalles</h4>
+      <div class="row"><div class="k">Mascotas</div><div class="v">Permitidas.</div></div>
+      <div class="row"><div class="k">Guía</div><div class="v">Habla española.</div></div>
+      <div class="row"><div class="k">No incluye</div><div class="v">Propinas.</div></div>
+      <div class="row"><div class="k">¿Cuándo reservar?</div><div class="v">18 horas antes si quedan plazas.</div></div>
+      <div class="row"><div class="k">Tipo de bono</div><div class="v">Electrónico. Llévalo en tu móvil.</div></div>
+      <div class="row"><div class="k">Accesibilidad</div><div class="v">No es accesible en silla de ruedas.</div></div>
+      <div class="row"><div class="k">Cancelación</div><div class="v">Sin costo. Si no vas a poder asistir al tour, por favor, cancela la reserva; si no, el guía te estará esperando.</div></div>
+    </aside>
+    <div class="itin-body">
+      <p>Nos reuniremos a la hora indicada en el punto de encuentro para comenzar este free tour por el centro de Cartagena de Indias. Caminaremos en torno a la antigua muralla, declarada Patrimonio Mundial de la Unesco, y llegaremos a la Plaza de San Pedro Claver. Allí hallaremos la iglesia del mismo nombre y conoceremos la historia de este santo español.</p>
+      <p>Cruzaremos la antigua puerta de la ciudad para encontrarnos de frente con la Torre del Reloj, que lleva dando la bienvenida a locales y turistas desde el siglo XIX. También pasearemos por la Plaza de los Coches, donde veremos la estatua de Pedro de Heredia, ¡el fundador de Cartagena de Indias!</p>
+      <p>Continuaremos descubriendo esta importante figura en el Teatro Heredia y viajaremos al pasado frente al Palacio de la Inquisición. ¿Sabíais que esta casona colonial llegó a albergar cámaras de tortura? Después pasearemos por el Parque Simón Bolívar, el pulmón de Cartagena de Indias.</p>
+      <p>Nos adentraremos por las callejuelas del corazón de la ciudad para llegar a la Catedral Santa Catalina de Alejandría. ¿Sabéis que es una de las iglesias más antiguas de Sudamérica? La cúpula, los colores que la cubren y los detalles de su frontispicio la han convertido en uno de los símbolos de Cartagena.</p>
+      <p>Finalmente, nos acercaremos hasta la emblemática Plaza de la Aduana. Durante décadas fue el centro administrativo de la ciudad. Además de descubrir dónde vivió Pedro de Heredia, nos encontraremos con una estatua en homenaje a Cristóbal Colón.</p>
+      <p>Tras un recorrido de dos horas y media, el free tour finaliza en el centro de Cartagena de Indias.</p>
+    </div>
+  </div>
+</div>
+
+<div class="band">
+  <div class="q">Quiero más información</div>
+  <a class="cta" href="#">Reservar esta experiencia</a>
+</div>
+
+<div class="wrap">
+  <section class="reviews">
+    <h3>Opiniones de viajeros</h3>
+    <div class="rev">
+      <div class="top"><span class="name">Ana Rodríguez</span><span class="stars">★★★★★</span></div>
+      <div class="meta">12/Jun/2026 • Viajó en Pareja • de España</div>
+      <div class="txt">Muy recomendable el tour. Nuestro guía Pedro, ¡fantástico!</div>
+    </div>
+    <div class="rev">
+      <div class="top"><span class="name">Alberto Catalán</span><span class="stars">★★★★★</span></div>
+      <div class="meta">26/May/2026 • Viajó en Pareja • de España</div>
+      <div class="txt">Magnífico tour el que nos dio Alejandro por la ciudad. Este joven de 23 años conoce a la perfección Cartagena y nos contagió su pasión y conocimientos. Un acierto haberlo reservado y un gustazo disfrutarlo.</div>
+    </div>
+    <div class="rev">
+      <div class="top"><span class="name">Anónimo</span><span class="stars">★★★★★</span></div>
+      <div class="meta">21/May/2026 • Viajó con Amigos • de España</div>
+      <div class="txt">Muy interesante pero muy despacio, hacía mucho calor. Hubiéramos agradecido ir un poquito más rápido.</div>
+    </div>
+    <a class="more-op" href="#">Ver más opiniones</a>
+  </section>
+</div>
+
+<footer>
+  <div class="lema">Viaja fácil, viaja Trvely ✈</div>
+  <div class="legal">Trvely · Living the World · experiencias.trvely.com.co</div>
+</footer>
+
+</body>
+</html>

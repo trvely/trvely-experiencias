@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Cata Ron y Chocolate · Experiencias Trvely</title>
+<meta name="description" content="Una experiencia para el paladar: degusta 8 de los mejores rones colombianos maridados con chocolates artesanales, mientras descubres la historia del r">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://res.cloudinary.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--burg:#b41241;--burg2:#b01242;--coral:#ff2d55;--cream:#fffcf3;--cream2:#fffbf6;--beige:#f4e5d2;--ink:#2b2b2b;--gray:#777;--line:#e6ddce}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Montserrat',sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}a{text-decoration:none;color:inherit}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.logo{height:32px}.nav-links{display:flex;align-items:center;gap:26px;font-size:12px}.nav-links a{color:#000}
+.btn-pill{background:var(--burg2);color:#fff;font-weight:700;font-size:12px;padding:13px 24px;border-radius:100px}
+.hero{position:relative;border-radius:48px;overflow:hidden;margin-top:6px;height:360px;background:#e9dcc9}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:center 55%}
+.hero .wm{position:absolute;left:6%;top:38%;font-weight:800;font-size:72px;color:rgba(255,255,255,.16);letter-spacing:-2px}
+.hero .lb{position:absolute;left:0;right:0;top:44%;text-align:center;color:#fff;font-weight:500;font-size:22px;letter-spacing:10px}
+.sec{padding:48px 0 6px}.chip{display:inline-block;border:1.5px solid var(--burg2);color:var(--burg2);font-weight:700;font-size:13px;padding:10px 22px;border-radius:41px}
+h2.big{font-weight:800;font-size:54px;line-height:.9;letter-spacing:-2.5px;margin-top:22px}
+.filtros{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}
+.filtros button{border:1.5px solid var(--line);background:#fff;color:var(--ink);font-family:inherit;font-weight:700;font-size:12px;padding:9px 18px;border-radius:100px;cursor:pointer}
+.filtros button.on{background:var(--burg);color:#fff;border-color:var(--burg)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:16px}
+.card{background:var(--cream2);border-radius:28px;box-shadow:0 0 34px -18px rgba(0,0,0,.28);overflow:hidden;display:flex;flex-direction:column}
+.card .ph{height:190px;overflow:hidden;background:#e9dcc9}.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .ph img{transform:scale(1.06)}
+.card .bd{padding:18px 20px 22px;display:flex;flex-direction:column;flex:1}
+.card .cat{font-size:10px;font-weight:700;color:var(--coral);text-transform:uppercase;letter-spacing:1px}
+.card h3{color:var(--burg);font-weight:800;font-size:19px;line-height:1.1;margin:6px 0 8px;min-height:42px}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 14px}
+.card .tags span{border:1px solid var(--coral);color:var(--coral);font-weight:700;font-size:9px;padding:3px 10px;border-radius:41px}
+.card .foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between}
+.card .price small{color:var(--burg);font-size:9px;display:block}.card .price b{font-size:22px}
+.card .vm{background:var(--burg2);color:#fff;font-weight:700;font-size:11px;padding:11px 20px;border-radius:100px}
+footer{background:var(--burg);color:#fff;margin-top:70px;padding:40px 0;text-align:center}
+footer .lema{font-weight:800;font-size:20px}footer .legal{font-size:11px;opacity:.75;margin-top:8px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}.hero{height:240px}h2.big{font-size:38px}}
+.dhero{position:relative;border-radius:44px;overflow:hidden;height:420px;margin-top:6px;background:#e9dcc9}
+.dhero img{width:100%;height:100%;object-fit:cover}.dhero .wm{position:absolute;left:40px;top:40%;font-weight:800;font-size:60px;line-height:.85;color:rgba(255,255,255,.16)}
+.dhero .lb{position:absolute;left:44px;top:32%;color:#fff;font-weight:500;font-size:22px;letter-spacing:9px}
+.ibar{background:var(--cream2);border-radius:40px;box-shadow:0 0 40px -20px rgba(0,0,0,.25);display:flex;flex-wrap:wrap;gap:44px;padding:28px 46px;margin:-60px 30px 0;position:relative;z-index:2}
+.ibar .k{color:var(--burg);font-size:10px}.ibar .v{font-weight:700;font-size:15px;margin-top:3px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}.gal img{width:100%;height:150px;object-fit:cover;border-radius:18px;background:#e9dcc9}
+.desc{font-size:20px;line-height:1.4;max-width:1000px;margin:40px auto 0;text-align:center}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:44px}
+.cols h4{color:var(--coral);font-size:18px;margin-bottom:14px}.cols li{font-size:15px;line-height:1.6;margin-left:18px}
+.band{background:var(--burg2);margin-top:60px;padding:38px 0;text-align:center}.band .q{color:#fff;font-weight:800;font-size:22px;margin-bottom:16px}
+.band .cta{display:inline-block;border:1.5px solid #fff;color:#fff;font-weight:700;font-size:15px;padding:14px 56px;border-radius:66px}
+@media(max-width:900px){.dhero{height:260px}.ibar{margin:-40px 10px 0;padding:22px;gap:20px}.gal{grid-template-columns:1fr 1fr}.cols{grid-template-columns:1fr;gap:22px}}
+</style></head><body><div class="wrap">
+<nav><img class="logo" src="../../assets/logo-trvely.png" alt="Trvely">
+<div class="nav-links"><a href="../">← Experiencias</a><a class="btn-pill" href="#">Tus Planes</a></div></nav>
+<section class="dhero"><img src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_1600,h_900,f_auto,q_auto/experiencias/cartagena/cata-ron-chocolate/imagenes/01-portada" alt="Cata Ron y Chocolate"><div class="lb">Noche</div><div class="wm">CATA RON Y CHOCOLATE</div></section>
+<div class="ibar">
+  <div><div class="k">Punto de encuentro</div><div class="v">DIFERENTES OPCIONES: 10:00 AM, 12:00 PM, 14:00 PM Y 16:00 PM Degustación de los 8 mejores rones cada</div></div>
+  <div><div class="k">Regreso</div><div class="v">—</div></div>
+  <div><div class="k">Precio por persona</div><div class="v" style="color:var(--burg)">$444.000</div></div>
+</div>
+<p class="desc">Una experiencia para el paladar: degusta 8 de los mejores rones colombianos maridados con chocolates artesanales, mientras descubres la historia del ron en Colombia.</p>
+<div class="gal"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_500,h_350,f_auto,q_auto/experiencias/cartagena/cata-ron-chocolate/imagenes/01-portada" alt=""><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_500,h_350,f_auto,q_auto/experiencias/cartagena/cata-ron-chocolate/imagenes/02" alt=""><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_500,h_350,f_auto,q_auto/experiencias/cartagena/cata-ron-chocolate/imagenes/03" alt=""><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_500,h_350,f_auto,q_auto/experiencias/cartagena/cata-ron-chocolate/imagenes/04" alt=""><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_500,h_350,f_auto,q_auto/experiencias/cartagena/cata-ron-chocolate/imagenes/05" alt=""><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_500,h_350,f_auto,q_auto/experiencias/cartagena/cata-ron-chocolate/imagenes/06" alt=""></div>
+<div class="cols">
+  <div><h4>Incluye</h4><ul><li>Degustación de los 8 mejores rones, cada uno marinado con chocolates artesanales</li><li>Recorrido por cautivadoras historias locales y la rica historia de la producción de ron en Colombia</li><li>Se realiza con 2 o más personas</li></ul></div>
+  <div><h4>No incluye</h4><ul><li>Servicios ni consumos no especificados</li><li>en el plan</li></ul></div>
+</div></div>
+<div class="band"><div class="q">¿Quieres vivir esta experiencia?</div><a class="cta" href="#">Reservar con un asesor</a></div><footer><div class="lema">Viaja fácil, viaja Trvely ✈</div><div class="legal">Trvely · Living the World · experiencias.trvely.com.co</div></footer></body></html>
