@@ -14,8 +14,8 @@ body{font-family:'Montserrat',sans-serif;color:var(--ink);background:#fff;-webki
 nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
 .logo{height:32px}.nav-links{display:flex;align-items:center;gap:26px;font-size:12px}.nav-links a{color:#000}
 .btn-pill{background:var(--burg2);color:#fff;font-weight:700;font-size:12px;padding:13px 24px;border-radius:100px}
-.hero{position:relative;border-radius:48px;overflow:hidden;margin-top:6px;height:360px;background:#e9dcc9}
-.hero img{width:100%;height:100%;object-fit:cover;object-position:center 55%}
+.hero{position:relative;border-radius:48px;overflow:hidden;margin-top:6px;height:clamp(380px,46vh,480px);background:#e9dcc9}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:center 48%}
 .hero .wm{position:absolute;left:6%;top:38%;font-weight:800;font-size:72px;color:rgba(255,255,255,.16);letter-spacing:-2px}
 .hero .lb{position:absolute;left:0;right:0;top:44%;text-align:center;color:#fff;font-weight:500;font-size:22px;letter-spacing:10px}
 .sec{padding:48px 0 6px}.chip{display:inline-block;border:1.5px solid var(--burg2);color:var(--burg2);font-weight:700;font-size:13px;padding:10px 22px;border-radius:41px}
@@ -36,7 +36,7 @@ h2.big{font-weight:800;font-size:54px;line-height:.9;letter-spacing:-2.5px;margi
 .card .price small{color:var(--burg);font-size:9px;display:block}.card .price b{font-size:22px}
 .card .vm{background:var(--burg2);color:#fff;font-weight:700;font-size:11px;padding:11px 20px;border-radius:100px}
 /* footer premium (.tvf: avion + Ferrari) se inyecta desde _partials/footer_premium.css */
-@media(max-width:900px){.grid{grid-template-columns:1fr}.hero{height:240px}h2.big{font-size:38px}}
+@media(max-width:900px){.grid{grid-template-columns:1fr}.hero{height:clamp(260px,42vh,340px)}h2.big{font-size:38px}}
 .dhero{position:relative;border-radius:44px;overflow:hidden;height:420px;margin-top:6px;background:#e9dcc9}
 .dhero img{width:100%;height:100%;object-fit:cover}.dhero .wm{position:absolute;left:40px;top:40%;font-weight:800;font-size:60px;line-height:.85;color:rgba(255,255,255,.16)}
 .dhero .lb{position:absolute;left:44px;top:32%;color:#fff;font-weight:500;font-size:22px;letter-spacing:9px}
@@ -63,9 +63,9 @@ body.reveal-on .card.revealed{opacity:1;transform:none}
    Extenda SOLO en el titulo "EXPERIENCIAS" del hero · WhiteStar en la firma.
    IMPERDIBLES (.wm), VIVE CARTAGENA (h2.big) y los heros de detalle se QUEDAN como estaban (Montserrat). */
 /* Hero: EXPERIENCIAS (Extenda) + firma White Star, CENTRADOS vertical con flex (feedback CEO: el Extenda estaba muy abajo). */
-.hero::before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(65% 65% at 50% 50%,rgba(20,2,10,.34),transparent 78%)}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(70% 72% at 50% 50%,rgba(20,2,10,.44),transparent 76%)}
 .hero-inner{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:2px;padding:0 20px}
-.hero .lb{position:static;font-family:'Extenda','Montserrat',sans-serif;font-weight:400;font-size:clamp(30px,5vw,52px);letter-spacing:2px;color:#fff;line-height:1.05}
+.hero .lb{position:static;font-family:'Extenda','Montserrat',sans-serif;font-weight:400;font-size:clamp(30px,5vw,52px);letter-spacing:2px;color:#fff;line-height:1.05;text-shadow:0 2px 28px rgba(0,0,0,.42)}
 .hero .sig{position:static;color:#f4e5d2;font-family:'WhiteStar','Playfair Display',cursive;font-size:clamp(26px,4.4vw,46px);text-shadow:0 3px 20px rgba(0,0,0,.35)}
 /* ===== DETALLE PREMIUM (unboxing: titulo solido sobre velo + galeria con lightbox) ===== */
 .dhero{height:clamp(360px,52vh,520px)}
@@ -137,7 +137,7 @@ body.reveal-on .card.revealed{opacity:1;transform:none}
 /*TVF-CSS-END*//*TVF-FX-START*/.tvf{isolation:isolate}.tvf-grain{position:absolute;inset:0;z-index:5;pointer-events:none;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:160px 160px}.tvf-shine{position:absolute;top:0;left:-35%;width:28%;height:100%;z-index:5;pointer-events:none;background:linear-gradient(105deg,transparent 0%,rgba(255,255,255,.16) 50%,transparent 100%);transform:skewX(-12deg);animation:tvfSweep 7s ease-in-out infinite}@keyframes tvfSweep{0%{left:-35%}55%,100%{left:135%}}/*TVF-FX-END*/</style></head><body><div class="wrap">
 <nav><img class="logo" src="../assets/logo-trvely.png" alt="Trvely">
 <div class="nav-links"><a href="#">Destinos</a><a href="#">Contacto</a><a class="btn-pill" href="#">Tus Planes</a></div></nav>
-<section class="hero"><img src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_1600,h_760,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/experiencias/cartagena/islas-del-rosario-panoramico/imagenes/01-portada" alt="Experiencias Cartagena"><div class="hero-inner"><div class="lb">EXPERIENCIAS</div><div class="sig">vive cada rincón</div></div></section>
+<section class="hero"><img src="https://res.cloudinary.com/trvely/image/upload/c_fill,g_north,w_1600,h_640,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/experiencias/cartagena/_hero/ciudad-amurallada" alt="Experiencias Cartagena"><div class="hero-inner"><div class="lb">EXPERIENCIAS</div><div class="sig">vive cada rincón</div></div></section>
 <section class="sec"><span class="chip">37 experiencias en Cartagena</span><h2 class="big">Vive Cartagena</h2></section>
 <div class="filtros"><button class="on" data-f="all">Todas</button><button data-f="ATARDECER">Atardecer</button><button data-f="BARU">Barú</button><button data-f="CITY_TOUR">City Tour</button><button data-f="EXCURSION">Excursión</button><button data-f="ISLAS_DEL_ROSARIO">Islas del Rosario</button><button data-f="NOCTURNO">Noche</button><button data-f="SAN_BERNARDO">San Bernardo</button><button data-f="TIERRA_BOMBA">Tierra Bomba</button></div>
 <div class="grid"><article class="card" data-cat="ATARDECER">
