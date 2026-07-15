@@ -100,7 +100,10 @@ body.reveal-on .card.revealed{opacity:1;transform:none}
 .tl .lugar{color:var(--gray);font-size:12px;font-weight:700;letter-spacing:.02em}
 .tl h5{margin:1px 0 4px;font-size:17px;font-weight:800}
 .tl p{margin:0;font-size:15px;line-height:1.55;color:var(--ink)}
-@media(max-width:900px){.ficha{grid-template-columns:1fr}.blk h3{font-size:22px}}
+.llevar{list-style:none;margin:6px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:8px 26px}
+.llevar li{position:relative;padding:5px 0 5px 22px;font-size:15px;line-height:1.4;border-bottom:1px solid var(--line)}
+.llevar li::before{content:"✓";position:absolute;left:2px;color:var(--burg);font-weight:800}
+@media(max-width:900px){.ficha,.llevar{grid-template-columns:1fr}.blk h3{font-size:22px}}
 .tvf{background:#B41241;font-family:'Montserrat',sans-serif;margin-top:50px}.tvf-top{max-width:1080px;margin:0 auto;padding:46px 26px;display:flex;gap:42px;align-items:center;flex-wrap:wrap}.tvf-logo{height:62px;filter:brightness(0) invert(1)}.tvf-txt{flex:1;min-width:300px;color:#f4e0e6;font-size:14px;line-height:1.75}.tvf-txt b{color:#fff;display:inline-block;margin-top:8px}.tvf-bar{background:rgba(0,0,0,.28)}.tvf-bar-in{max-width:1080px;margin:0 auto;padding:15px 26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;color:#ecd4db;font-size:12px}.tvf-bar-in a{color:#ecd4db;text-decoration:none}.tvf-bar-in a:hover{color:#fff}/*TVF-CSS-START*/
 .tvf{
   --tvf-bg-a:#870d31;
@@ -168,9 +171,9 @@ body.reveal-on .card.revealed{opacity:1;transform:none}
 <div class="blk"><p class="blk-h">🗺️ Ficha del atractivo</p><h3>De un vistazo</h3><div class="ficha"><div class="dato full"><div class="k">Atractivos que visitas</div><div class="v">Tipón · Pikillacta · Andahuaylillas</div></div><div class="dato"><div class="k">Tipo de experiencia</div><div class="v">Aventura · Naturaleza · Caminata</div></div><div class="dato"><div class="k">Duración</div><div class="v">Medio día · 09:00 a 15:30</div></div><div class="dato"><div class="k">Dificultad</div><div class="v">Fácil</div></div><div class="dato"><div class="k">Disponibilidad</div><div class="v">Todos los días · con reserva anticipada</div></div><div class="dato full"><div class="k">Altitud</div><div class="v">3.300 – 3.560 m s. n. m.</div></div></div></div>
 <div class="blk"><p class="blk-h">🧭 Itinerario del día</p><h3>Qué vas a vivir, paso a paso</h3><ol class="tl"><li><span class="num">1</span><div class="lugar">Tu hotel · zona céntrica</div><h5>Recojo</h5><p>Pasamos por ti y salimos a explorar el Valle Sur del Cusco, donde el paisaje se mezcla con la arquitectura inca y el arte colonial.</p></li><li><span class="num">2</span><div class="lugar">Tipón</div><h5>La ingeniería del agua</h5><p>Un conjunto de andenes y canales que aún corren: aquí entiendes el dominio hidráulico de los incas.</p></li><li><span class="num">3</span><div class="lugar">Pikillacta</div><h5>La ciudad Wari</h5><p>Centro militar del antiguo Perú levantado por la cultura Wari, anterior a los incas.</p></li><li><span class="num">4</span><div class="lugar">Andahuaylillas</div><h5>La Capilla Sixtina de América</h5><p>Una iglesia del siglo XVII con murales al temple y retablos tallados recubiertos de pan de oro.</p></li><li><span class="num fin">✓</span><div class="lugar">Plaza San Francisco · Cusco</div><h5>Regreso y cierre</h5><p>Volvemos al centro del Cusco cerca de las 15:30, listos para seguir a tu ritmo.</p></li></ol></div>
 <div class="cols">
-  <div><h4>Incluye</h4><ul><li>Guia oficial de turismo bilingue (espanol/ingles)</li><li>Transporte turistico con chofer profesional</li><li>Entradas a los atractivos del tour</li></ul></div>
-  <div><h4>No incluye</h4><ul><li>Seguro de viaje (recomendado, no incluido)</li><li>Propinas y gastos personales</li></ul></div>
-</div></div>
+  <div><h4>Incluye</h4><ul><li>Transporte turístico durante todo el circuito</li><li>Guía profesional en español o inglés</li><li>Kit de primeros auxilios y oxígeno</li><li>Tickets de ingreso</li><li>Boleto Turístico</li></ul></div>
+  <div><h4>No incluye</h4><ul><li>Seguro de viaje</li><li>Alimentación</li><li>Actividades adicionales, propinas y gastos personales</li></ul></div>
+</div><div class="blk"><p class="blk-h">🎒 Qué llevar</p><h3>Prepara tu mochila</h3><ul class="llevar"><li>Protección solar</li><li>Protección para la lluvia</li><li>Abrigo para el frío</li></ul></div></div>
 <div class="band"><div class="q">Consulta esta experiencia con tu asesor Trvely</div></div>
 <div class="lbx" id="lbx" onclick="if(event.target.id==='lbx')LB.close()">
   <span class="lbx-x" onclick="LB.close()">&times;</span>
