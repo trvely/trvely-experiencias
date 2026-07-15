@@ -81,6 +81,26 @@ body.reveal-on .card.revealed{opacity:1;transform:none}
 .lbx-nav{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:52px;cursor:pointer;padding:0 22px;user-select:none;opacity:.75}
 .lbx-nav:hover{opacity:1}.lbx-prev{left:6px}.lbx-next{right:6px}
 @media(max-width:900px){.dh-content{left:22px;right:22px;bottom:58px}.lbx-nav{font-size:40px;padding:0 12px}}
+/* ===== Ficha del atractivo + Itinerario (programa del operador, voz Trvely) ===== */
+.blk{max-width:1000px;margin:52px auto 0;padding:0 6px}
+.blk-h{color:var(--burg);font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 6px}
+.blk h3{font-size:26px;font-weight:800;margin:0 0 18px;letter-spacing:-.01em}
+.ficha{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.dato{background:var(--cream2);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.dato .k{color:var(--gray);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;margin-bottom:3px}
+.dato .v{color:var(--ink);font-size:15.5px;font-weight:600;line-height:1.4}
+.dato.full{grid-column:1/-1}
+.tl{list-style:none;margin:6px 0 0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:16px;top:8px;bottom:16px;width:2px;background:var(--line)}
+.tl li{position:relative;padding:0 0 22px 50px}
+.tl li:last-child{padding-bottom:0}
+.tl .num{position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--burg);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;box-shadow:0 0 0 5px var(--cream)}
+.tl .num.fin{background:#1f7a44}
+.tl .lugar{color:var(--gray);font-size:12px;font-weight:700;letter-spacing:.02em}
+.tl h5{margin:1px 0 4px;font-size:17px;font-weight:800}
+.tl p{margin:0;font-size:15px;line-height:1.55;color:var(--ink)}
+@media(max-width:900px){.ficha{grid-template-columns:1fr}.blk h3{font-size:22px}}
 .tvf{background:#B41241;font-family:'Montserrat',sans-serif;margin-top:50px}.tvf-top{max-width:1080px;margin:0 auto;padding:46px 26px;display:flex;gap:42px;align-items:center;flex-wrap:wrap}.tvf-logo{height:62px;filter:brightness(0) invert(1)}.tvf-txt{flex:1;min-width:300px;color:#f4e0e6;font-size:14px;line-height:1.75}.tvf-txt b{color:#fff;display:inline-block;margin-top:8px}.tvf-bar{background:rgba(0,0,0,.28)}.tvf-bar-in{max-width:1080px;margin:0 auto;padding:15px 26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;color:#ecd4db;font-size:12px}.tvf-bar-in a{color:#ecd4db;text-decoration:none}.tvf-bar-in a:hover{color:#fff}/*TVF-CSS-START*/
 .tvf{
   --tvf-bg-a:#870d31;
@@ -143,97 +163,97 @@ body.reveal-on .card.revealed{opacity:1;transform:none}
   <a class="ph" href="montana-7-colores-cuatrimotos/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973216/experiencias/peru/montana-7-colores-cuatrimotos/imagenes/01-portada" alt="Montaña 7 Colores en cuatrimotos"></a>
   <div class="bd"><div class="cat">Cusco · Aventura</div>
     <h3>Montaña 7 Colores en cuatrimotos</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$381.677</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$382.058</b></div>
     <a class="vm" href="montana-7-colores-cuatrimotos/">Ver más</a></div></div></article><article class="card" data-cat="AVENTURA" data-zona="Cusco">
   <a class="ph" href="waqrapukara/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973289/experiencias/peru/waqrapukara/imagenes/01-portada" alt="Waqrapukara"></a>
   <div class="bd"><div class="cat">Cusco · Aventura</div>
     <h3>Waqrapukara</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$210.137</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$210.346</b></div>
     <a class="vm" href="waqrapukara/">Ver más</a></div></div></article><article class="card" data-cat="AVENTURA" data-zona="Cusco">
   <a class="ph" href="huaypo-salineras-cuatrimotos/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973183/experiencias/peru/huaypo-salineras-cuatrimotos/imagenes/01-portada" alt="Laguna Huaypo y Salineras en cuatrimotos"></a>
   <div class="bd"><div class="cat">Cusco · Aventura</div>
     <h3>Laguna Huaypo y Salineras en cuatrimotos</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$171.540</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$171.711</b></div>
     <a class="vm" href="huaypo-salineras-cuatrimotos/">Ver más</a></div></div></article><article class="card" data-cat="CULTURAL" data-zona="Cusco">
   <a class="ph" href="valle-sagrado-vip/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973148/experiencias/peru/valle-sagrado-vip/imagenes/01-portada" alt="Valle Sagrado VIP"></a>
   <div class="bd"><div class="cat">Cusco · Cultural</div>
     <h3>Valle Sagrado VIP</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$214.425</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$214.639</b></div>
     <a class="vm" href="valle-sagrado-vip/">Ver más</a></div></div></article><article class="card" data-cat="CULTURAL" data-zona="Cusco">
   <a class="ph" href="valle-sagrado-tradicional/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973131/experiencias/peru/valle-sagrado-tradicional/imagenes/01-portada" alt="Valle Sagrado Tradicional"></a>
   <div class="bd"><div class="cat">Cusco · Cultural</div>
     <h3>Valle Sagrado Tradicional</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$188.694</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$188.883</b></div>
     <a class="vm" href="valle-sagrado-tradicional/">Ver más</a></div></div></article><article class="card" data-cat="CULTURAL" data-zona="Cusco">
   <a class="ph" href="maras-moray/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973165/experiencias/peru/maras-moray/imagenes/01-portada" alt="Maras Moray"></a>
   <div class="bd"><div class="cat">Cusco · Cultural</div>
     <h3>Maras Moray</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$171.540</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$171.711</b></div>
     <a class="vm" href="maras-moray/">Ver más</a></div></div></article><article class="card" data-cat="CULTURAL" data-zona="Cusco">
   <a class="ph" href="valle-sur/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973192/experiencias/peru/valle-sur/imagenes/01-portada" alt="Valle Sur"></a>
   <div class="bd"><div class="cat">Cusco · Cultural</div>
     <h3>Valle Sur</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$171.540</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$171.711</b></div>
     <a class="vm" href="valle-sur/">Ver más</a></div></div></article><article class="card" data-cat="CULTURAL" data-zona="Cusco">
   <a class="ph" href="city-tour-cusco/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973089/experiencias/peru/city-tour-cusco/imagenes/01-portada" alt="City Tour Cusco"></a>
   <div class="bd"><div class="cat">Cusco · Cultural</div>
     <h3>City Tour Cusco</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$137.232</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$137.369</b></div>
     <a class="vm" href="city-tour-cusco/">Ver más</a></div></div></article><article class="card" data-cat="ICONO" data-zona="Cusco">
   <a class="ph" href="machu-picchu-circuito-3/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973334/experiencias/peru/machu-picchu-circuito-3/imagenes/01-portada" alt="Machu Picchu Full Day (circuito 3)"></a>
   <div class="bd"><div class="cat">Cusco · Ícono</div>
     <h3>Machu Picchu Full Day (circuito 3)</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$1.200.782</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$1.201.980</b></div>
     <a class="vm" href="machu-picchu-circuito-3/">Ver más</a></div></div></article><article class="card" data-cat="ICONO" data-zona="Cusco">
   <a class="ph" href="machu-picchu-circuito-2/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783972884/experiencias/peru/machu-picchu-circuito-2/imagenes/01-portada" alt="Machu Picchu Full Day (circuito 2)"></a>
   <div class="bd"><div class="cat">Cusco · Ícono</div>
     <h3>Machu Picchu Full Day (circuito 2)</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$1.072.127</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$1.073.196</b></div>
     <a class="vm" href="machu-picchu-circuito-2/">Ver más</a></div></div></article><article class="card" data-cat="MONTAÑA" data-zona="Cusco">
   <a class="ph" href="montana-palcoyo/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973251/experiencias/peru/montana-palcoyo/imagenes/01-portada" alt="Montaña Palcoyo"></a>
   <div class="bd"><div class="cat">Cusco · Montaña</div>
     <h3>Montaña Palcoyo</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$167.252</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$167.419</b></div>
     <a class="vm" href="montana-palcoyo/">Ver más</a></div></div></article><article class="card" data-cat="MONTAÑA" data-zona="Cusco">
   <a class="ph" href="montana-7-colores/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783974096/experiencias/peru/montana-7-colores/imagenes/01-portada" alt="Montaña 7 Colores"></a>
   <div class="bd"><div class="cat">Cusco · Montaña</div>
     <h3>Montaña 7 Colores</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$137.232</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$137.369</b></div>
     <a class="vm" href="montana-7-colores/">Ver más</a></div></div></article><article class="card" data-cat="MONTAÑA" data-zona="Cusco">
   <a class="ph" href="laguna-humantay/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973268/experiencias/peru/laguna-humantay/imagenes/01-portada" alt="Laguna Humantay"></a>
   <div class="bd"><div class="cat">Cusco · Montaña</div>
     <h3>Laguna Humantay</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$137.232</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$137.369</b></div>
     <a class="vm" href="laguna-humantay/">Ver más</a></div></div></article><article class="card" data-cat="AVENTURA" data-zona="Lima">
   <a class="ph" href="paracas-huacachina-nazca-2d1n/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973403/experiencias/peru/paracas-huacachina-nazca-2d1n/imagenes/01-portada" alt="Paracas Huacachina Nazca 2D/1N"></a>
   <div class="bd"><div class="cat">Lima · Aventura</div>
     <h3>Paracas Huacachina Nazca 2D/1N</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$1.874.078</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$1.875.947</b></div>
     <a class="vm" href="paracas-huacachina-nazca-2d1n/">Ver más</a></div></div></article><article class="card" data-cat="AVENTURA" data-zona="Lima">
   <a class="ph" href="paracas-huacachina/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973363/experiencias/peru/paracas-huacachina/imagenes/01-portada" alt="Paracas Huacachina Full Day"></a>
   <div class="bd"><div class="cat">Lima · Aventura</div>
     <h3>Paracas Huacachina Full Day</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$257.311</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$257.567</b></div>
     <a class="vm" href="paracas-huacachina/">Ver más</a></div></div></article><article class="card" data-cat="CULTURAL" data-zona="Lima">
   <a class="ph" href="circuito-magico-del-agua/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973355/experiencias/peru/circuito-magico-del-agua/imagenes/01-portada" alt="Circuito Mágico del Agua"></a>
   <div class="bd"><div class="cat">Lima · Cultural</div>
     <h3>Circuito Mágico del Agua</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$128.655</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$128.784</b></div>
     <a class="vm" href="circuito-magico-del-agua/">Ver más</a></div></div></article><article class="card" data-cat="CULTURAL" data-zona="Puno">
   <a class="ph" href="uros-taquile-luquina-2d1n/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973463/experiencias/peru/uros-taquile-luquina-2d1n/imagenes/01-portada" alt="Uros / Taquile - Luquina 2D/1N"></a>
   <div class="bd"><div class="cat">Puno · Cultural</div>
     <h3>Uros / Taquile - Luquina 2D/1N</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$351.658</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$352.008</b></div>
     <a class="vm" href="uros-taquile-luquina-2d1n/">Ver más</a></div></div></article><article class="card" data-cat="CULTURAL" data-zona="Puno">
   <a class="ph" href="uros-taquile/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973442/experiencias/peru/uros-taquile/imagenes/01-portada" alt="Uros / Taquile Full Day"></a>
   <div class="bd"><div class="cat">Puno · Cultural</div>
     <h3>Uros / Taquile Full Day</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$171.540</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$171.711</b></div>
     <a class="vm" href="uros-taquile/">Ver más</a></div></div></article><article class="card" data-cat="CULTURAL" data-zona="Puno">
   <a class="ph" href="uros-amantani/"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_700,h_500,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973452/experiencias/peru/uros-amantani/imagenes/01-portada" alt="Uros / Amantani Full Day"></a>
   <div class="bd"><div class="cat">Puno · Cultural</div>
     <h3>Uros / Amantani Full Day</h3><div class="tags"></div>
-    <div class="foot"><div class="price"><small>Desde</small><b>$171.540</b></div>
+    <div class="foot"><div class="price"><small>Desde</small><b>$171.711</b></div>
     <a class="vm" href="uros-amantani/">Ver más</a></div></div></article></div></div>
 <script>
 document.querySelectorAll('.filtros button').forEach(b=>b.onclick=()=>{

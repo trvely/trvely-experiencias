@@ -81,6 +81,26 @@ body.reveal-on .card.revealed{opacity:1;transform:none}
 .lbx-nav{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:52px;cursor:pointer;padding:0 22px;user-select:none;opacity:.75}
 .lbx-nav:hover{opacity:1}.lbx-prev{left:6px}.lbx-next{right:6px}
 @media(max-width:900px){.dh-content{left:22px;right:22px;bottom:58px}.lbx-nav{font-size:40px;padding:0 12px}}
+/* ===== Ficha del atractivo + Itinerario (programa del operador, voz Trvely) ===== */
+.blk{max-width:1000px;margin:52px auto 0;padding:0 6px}
+.blk-h{color:var(--burg);font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 6px}
+.blk h3{font-size:26px;font-weight:800;margin:0 0 18px;letter-spacing:-.01em}
+.ficha{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.dato{background:var(--cream2);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.dato .k{color:var(--gray);font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;margin-bottom:3px}
+.dato .v{color:var(--ink);font-size:15.5px;font-weight:600;line-height:1.4}
+.dato.full{grid-column:1/-1}
+.tl{list-style:none;margin:6px 0 0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:16px;top:8px;bottom:16px;width:2px;background:var(--line)}
+.tl li{position:relative;padding:0 0 22px 50px}
+.tl li:last-child{padding-bottom:0}
+.tl .num{position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--burg);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;box-shadow:0 0 0 5px var(--cream)}
+.tl .num.fin{background:#1f7a44}
+.tl .lugar{color:var(--gray);font-size:12px;font-weight:700;letter-spacing:.02em}
+.tl h5{margin:1px 0 4px;font-size:17px;font-weight:800}
+.tl p{margin:0;font-size:15px;line-height:1.55;color:var(--ink)}
+@media(max-width:900px){.ficha{grid-template-columns:1fr}.blk h3{font-size:22px}}
 .tvf{background:#B41241;font-family:'Montserrat',sans-serif;margin-top:50px}.tvf-top{max-width:1080px;margin:0 auto;padding:46px 26px;display:flex;gap:42px;align-items:center;flex-wrap:wrap}.tvf-logo{height:62px;filter:brightness(0) invert(1)}.tvf-txt{flex:1;min-width:300px;color:#f4e0e6;font-size:14px;line-height:1.75}.tvf-txt b{color:#fff;display:inline-block;margin-top:8px}.tvf-bar{background:rgba(0,0,0,.28)}.tvf-bar-in{max-width:1080px;margin:0 auto;padding:15px 26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;color:#ecd4db;font-size:12px}.tvf-bar-in a{color:#ecd4db;text-decoration:none}.tvf-bar-in a:hover{color:#fff}/*TVF-CSS-START*/
 .tvf{
   --tvf-bg-a:#870d31;
@@ -141,10 +161,12 @@ body.reveal-on .card.revealed{opacity:1;transform:none}
 <div class="ibar">
   <div><div class="k">Punto de encuentro</div><div class="v">04:00</div></div>
   <div><div class="k">Regreso</div><div class="v">—</div></div>
-  <div><div class="k">Precio por persona</div><div class="v" style="color:var(--burg)">$210.137</div></div>
+  <div><div class="k">Precio por persona</div><div class="v" style="color:var(--burg)">$210.346</div></div>
 </div>
 <p class="desc">Una fortaleza inca escondida en las alturas del canon del Apurimac, considerada un santuario de retiro espiritual. La caminata a Waqrapukara premia con paz y vistas imponentes a quienes buscan un Cusco distinto y menos transitado. Dia completo (04:30 a 19:00), dificultad moderada; solo sabados y domingos.</p>
 <div class="gal"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_500,h_350,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973289/experiencias/peru/waqrapukara/imagenes/01-portada" alt="Waqrapukara - foto 1" onclick="LB.open(0)"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_500,h_350,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973291/experiencias/peru/waqrapukara/imagenes/02" alt="Waqrapukara - foto 2" onclick="LB.open(1)"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_500,h_350,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973291/experiencias/peru/waqrapukara/imagenes/03" alt="Waqrapukara - foto 3" onclick="LB.open(2)"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_500,h_350,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973292/experiencias/peru/waqrapukara/imagenes/04" alt="Waqrapukara - foto 4" onclick="LB.open(3)"><img loading="lazy" src="https://res.cloudinary.com/trvely/image/upload/c_fill,w_500,h_350,f_auto,q_auto/e_saturation:-8/co_rgb:F4E5D2,e_colorize:3/v1783973293/experiencias/peru/waqrapukara/imagenes/05" alt="Waqrapukara - foto 5" onclick="LB.open(4)"></div>
+<div class="blk"><p class="blk-h">🗺️ Ficha del atractivo</p><h3>De un vistazo</h3><div class="ficha"><div class="dato full"><div class="k">Atractivos que visitas</div><div class="v">Waqrapukara · Cañón del Apurímac · Acomayo</div></div><div class="dato"><div class="k">Tipo de experiencia</div><div class="v">Aventura · Naturaleza · Caminata</div></div><div class="dato"><div class="k">Duración</div><div class="v">Full day (4:30 a. m. a 7:00 p. m.)</div></div><div class="dato"><div class="k">Dificultad</div><div class="v">Moderada</div></div><div class="dato"><div class="k">Disponibilidad</div><div class="v">Solo sábados y domingos · con reserva anticipada</div></div><div class="dato full"><div class="k">Altitud</div><div class="v">3.400 – 4.300 m s. n. m.</div></div></div></div>
+<div class="blk"><p class="blk-h">🧭 Itinerario del día</p><h3>Qué vas a vivir, paso a paso</h3><ol class="tl"><li><span class="num">1</span><div class="lugar">Tu hotel · zona céntrica</div><h5>Recojo temprano</h5><p>Pasamos por ti entre las 5:30 y las 6:00 de la mañana para arrancar la aventura rumbo al sur del Cusco.</p></li><li><span class="num">2</span><div class="lugar">Acomayo</div><h5>Parada en el poblado</h5><p>Tras unas tres horas de viaje llegamos a este pintoresco pueblo para un descanso: baños, agua y algún snack antes de seguir.</p></li><li><span class="num">3</span><div class="lugar">Rinconada</div><h5>Empieza la caminata</h5><p>Treinta minutos más y llegamos a la comunidad de Rinconada, a 3.800 metros, punto de partida a pie.</p></li><li><span class="num">4</span><div class="lugar">Cañón del Apurímac</div><h5>La primera gran vista</h5><p>El cañón se abre imponente y las formaciones rocosas te avisan que Waqrapukara ya está cerca.</p></li><li><span class="num">5</span><div class="lugar">Waqrapukara</div><h5>La fortaleza escondida</h5><p>Un santuario inca de retiro en las alturas, rodeado de flora y fauna, pensado para el descanso del espíritu.</p></li><li><span class="num fin">✓</span><div class="lugar">Acomayo</div><h5>Almuerzo y retorno</h5><p>Bajamos de vuelta a Acomayo para almorzar y luego tomar la movilidad de regreso al Cusco.</p></li></ol></div>
 <div class="cols">
   <div><h4>Incluye</h4><ul><li>Guia oficial de turismo bilingue (espanol/ingles)</li><li>Transporte turistico con chofer profesional</li><li>Entradas a los atractivos del tour</li><li>Alimentacion: Desayuno y almuerzo buffet</li></ul></div>
   <div><h4>No incluye</h4><ul><li>Seguro de viaje (recomendado, no incluido)</li><li>Propinas y gastos personales</li></ul></div>
