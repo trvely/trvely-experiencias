@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "tipo": "experiencias",
+  "slug": "cartagena",
+  "titulo": "Experiencias Cartagena",
+  "destino": "cartagena",
+  "nombre_destino": "Cartagena",
+  "fondo": "experiencias/cartagena/_hero/ciudad-amurallada-soleada",
+  "generado_por": "siembra inicial (Vitrina)",
+  "generado": "2026-07-22"
+}

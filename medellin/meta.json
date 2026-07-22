@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "tipo": "experiencias",
+  "slug": "medellin",
+  "titulo": "Experiencias Medellín",
+  "destino": "medellin",
+  "nombre_destino": "Medellín",
+  "fondo": "experiencias/medellin/_hero/medellin",
+  "generado_por": "siembra inicial (Vitrina)",
+  "generado": "2026-07-22"
+}
